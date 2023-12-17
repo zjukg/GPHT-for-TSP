@@ -49,11 +49,11 @@ bash init.sh
   
 4. predict triples(in `KGE-TSP`)
 
-  - CFamily  
-    python HAKE-TSP/run_close.py -train -test -data=DATASET -gpu=0 -perfix='0.8_'  -testGNN "EXPS/CFamily/toKGE_XXX.pt" -model=MODEL
+    - CFamily  
+      python HAKE-TSP/run_close.py -train -test -data=DATASET -gpu=0 -perfix='0.8_'  -testGNN "EXPS/CFamily/toKGE_XXX.pt" -model=MODEL
 
-  -  Wiki143k and Wiki79k  
-    python HAKE-TSP/run_open.py -train -test -data=DATASET -gpu=0 -perfix='0.8_'  -testGNN "EXPS/DATASET/toKGE_XXX.pt" -model=MODEL -valid_steps=STEP
+    -  Wiki143k and Wiki79k  
+      python HAKE-TSP/run_open.py -train -test -data=DATASET -gpu=0 -perfix='0.8_'  -testGNN "EXPS/DATASET/toKGE_XXX.pt" -model=MODEL -valid_steps=STEP
 
 
 # Acknowledgement
