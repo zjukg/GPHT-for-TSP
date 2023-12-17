@@ -20,10 +20,10 @@ bash init.sh
 # KGE-TSP
 
 - CFamily  
-  python HAKE-TSP/run_close.py -train -test -data=DATASET -gpu=GPU -perfix='0.8_' --model=MODEL  --valid_steps=STEP
+  python KGE-TSP/run_close.py -train -test -data=DATASET -gpu=GPU -perfix='0.8_' --model=MODEL  --valid_steps=STEP
 
 - Wiki79k and Wiki143k   
-  python  HAKE-TSP/run_open.py -train -test -data=DATASET -gpu=gpu -perfix='0.8_' --model=MODEL --valid_steps=STEP
+  python  KGE-TSP/run_open.py -train -test -data=DATASET -gpu=gpu -perfix='0.8_' --model=MODEL --valid_steps=STEP
      
   -MODEL: the choice of KGE model, ['HAKE', 'PairRE']  
   -PERFIX: set the integrity of the dataset in the format of `percent_`  
@@ -50,10 +50,10 @@ bash init.sh
 4. predict triples(in `KGE-TSP`)
 
     - CFamily  
-      python HAKE-TSP/run_close.py -train -test -data=DATASET -gpu=0 -perfix='0.8_'  -testGNN "EXPS/CFamily/toKGE_XXX.pt" -model=MODEL
+      python KGE-TSP/run_close.py -train -test -data=DATASET -gpu=0 -perfix='0.8_'  -testGNN "EXPS/CFamily/toKGE_XXX.pt" -model=MODEL
 
     -  Wiki143k and Wiki79k  
-      python HAKE-TSP/run_open.py -train -test -data=DATASET -gpu=0 -perfix='0.8_'  -testGNN "EXPS/DATASET/toKGE_XXX.pt" -model=MODEL -valid_steps=STEP
+      python KGE-TSP/run_open.py -train -test -data=DATASET -gpu=0 -perfix='0.8_'  -testGNN "EXPS/DATASET/toKGE_XXX.pt" -model=MODEL -valid_steps=STEP
 
 
 # Acknowledgement
