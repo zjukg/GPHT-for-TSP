@@ -1,0 +1,10 @@
+# python HAKE-TSP/run_close.py -train -test -data='Family' -gpu='1' -perfix='0.8_' --model='HAKE'
+# python HAKE-TSP/run_close.py -train -test -data='Family' -gpu='1' -perfix='0.8_' --model='PairRE' 
+#python HAKE-TSP/run_close.py -train -test -data='Family' -gpu='1' -perfix='0.8_' --model='HAKE'  -testGNN="EXPS/Family/atte_attr_model_hake_toKGE_SP0.8__vr890_vp9-T_r901_p23_l175040.pt" --max_steps=100000 --valid_steps=20000 --best_evaluate="F1" --bs="atte_attr"
+#python HAKE-TSP/run_close.py -train -test -data='Family' -gpu='1' -perfix='0.8_' --model='HAKE'  -testGNN="EXPS/Family/atte_attr_model_hake_toKGE_SP0.8__vr890_vp9-T_r901_p23_l175040.pt" --max_steps=100000 --valid_steps=10000 --best_evaluate="F1" --bs="atte_attr"
+#python HAKE-TSP/run_close.py -train -test -data='Family' -gpu='1' -perfix='0.8_' --model='HAKE'  -testGNN="EXPS/Family/atte_attr_model_hake_toKGE_SP0.8__vr890_vp9-T_r901_p23_l175040.pt" --max_steps=100000 --valid_steps=5000 --best_evaluate="F1" --bs="normal"
+python HAKE-TSP/run_close.py -train -test -data='Family' -gpu='1' -perfix='0.8_' --model='HAKE'  -testGNN="EXPS/Family/model_hake__minconf0.3_toKGE_SP0.8_V_f15.4860_r889_p7-T_r908_p19_l209320.pt" --max_steps=150000 --valid_steps=5000 --best_evaluate="F1" --bs="normal"
+python HAKE-TSP/run_close.py -train -test -data='Family' -gpu='1' -perfix='0.8_' --model='HAKE'  -testGNN="EXPS/Family/model_hake__minconf0.3_toKGE_SP0.8_V_f16.5060_r826_p8-T_r844_p21_l182337.pt" --max_steps=150000 --valid_steps=5000 --best_evaluate="F1" --bs="normal"
+
+#python HAKE-TSP/run_close.py -train -test -data='Family' -gpu='1' -perfix='0.8_' --model='HAKE'  -testGNN "/home/xuyajing/GPHT/GPHT/EXPS/Family/model_Family_hake__minconf0.15_toKGE_SP0.8_V_f13.3893_r964_p6-T_r962_p16_l262999.pt" --max_steps=60000 --valid_steps=10000 --best_evaluate="F1"
+#python HAKE-TSP/run_close.py -train -test -data='Family' -gpu='1' -perfix='0.8_' --model='HAKE' -testGNN "EXPS/Family/model_hake__minconf0.3_toKGE_SP0.8_V_f15.4860_r889_p7-T_r908_p19_l209320.pt"
