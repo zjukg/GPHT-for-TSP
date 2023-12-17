@@ -1,5 +1,5 @@
 
-#Preprocess
+###### Preprocess
 ```bash
 bash init.sh
 ```
@@ -48,7 +48,7 @@ python RuleTensor-TSP/GraphRule_open.py -dataset=DATASET  -rule_len=LEN -hc_thr=
 
 ###### GPHT
 
-### 1. generate subgraphs
+1. generate subgraphs
 
 ```bash
 python GPHT/run.py -dataset=DATASET -subgraph=SUBLEN -perfix=PERFIX
@@ -56,13 +56,13 @@ python GPHT/run.py -dataset=DATASET -subgraph=SUBLEN -perfix=PERFIX
 
 `SUBLEN`: set max hops of subgraph from center to edge
 
-### 2. pre-train embeddings
+2. pre-train embeddings
 
 ```bash
 python GPHT/run.py -dataset=DATASET -subgraph=SUBLEN -perfix=PERFIX -batch=BATCH -pretrain -desc=DESC
 ```
 
-### 3. train the model
+3. train the model
 
 ```bash
 python GPHT/run.py -dataset=DATASET -perfix=PERFIX -lr=LR -restore=RESTORE -batch=1 -epoch=EPOCH -valid_epochs=STEP -score_func=MODEL -minconf=MINCONF
@@ -70,7 +70,7 @@ python GPHT/run.py -dataset=DATASET -perfix=PERFIX -lr=LR -restore=RESTORE -batc
 `LR`: a little scale number for learning rate, like 0.00003 or less
 `MINCONF`: selecting the final predicted triples
 
-### 4. predict triples(in `HAKE-TSP`)
+4. predict triples(in `KGE-TSP`)
 
 ```bash
 #CFamily
