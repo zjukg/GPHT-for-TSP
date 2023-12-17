@@ -5,10 +5,10 @@ bash init.sh
 
 # RuleTensor-TSP
 
-## CFamily
+- CFamily
   python RuleTensor-TSP/GraphRule_close.py -dataset=DATASET  -rule_len=LEN -hc_thr=HC -sc_thr=SC -percent=0.8 -gpu=GPU
 
-## Wiki79k and Wiki143k
+- Wiki79k and Wiki143k
   python RuleTensor-TSP/GraphRule_open.py -dataset=DATASET  -rule_len=LEN -hc_thr=HC -sc_thr=SC -percent=0.8 -gpu=GPU
 
   -DATASET: choose the dataset in `DATA/`
@@ -25,10 +25,10 @@ bash init.sh
 
 # KGE-TSP
 
-## CFamily
+- CFamily
   python HAKE-TSP/run_close.py -train -test -data=DATASET -gpu=GPU -perfix='0.8_' --model=MODEL  --valid_steps=STEP
 
-## Wiki79k and Wiki143k 
+- Wiki79k and Wiki143k 
   python  HAKE-TSP/run_open.py -train -test -data=DATASET -gpu=gpu -perfix='0.8_' --model=MODEL --valid_steps=STEP
 
   -MODEL: the choice of KGE model, ['HAKE', 'PairRE']
@@ -58,10 +58,10 @@ bash init.sh
 
 4. predict triples(in `KGE-TSP`)
 
-## CFamily
+  - CFamily
   python HAKE-TSP/run_close.py -train -test -data=DATASET -gpu=0 -perfix='0.8_'  -testGNN "EXPS/CFamily/toKGE_XXX.pt" -model=MODEL
 
-## Wiki143k and Wiki79k
+  -  Wiki143k and Wiki79k
   python HAKE-TSP/run_open.py -train -test -data=DATASET -gpu=0 -perfix='0.8_'  -testGNN "EXPS/DATASET/toKGE_XXX.pt" -model=MODEL -valid_steps=STEP
 
 
