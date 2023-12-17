@@ -44,7 +44,7 @@ bash init.sh
 
     python GPHT/run.py -dataset=DATASET -perfix=PERFIX -lr=LR -restore=RESTORE -batch=1 -epoch=EPOCH -valid_epochs=STEP -score_func=MODEL -minconf=MINCONF  
       
-    -LR: a little scale number for learning rate, like 0.00003 or less
+    -LR: a little scale number for learning rate, like 0.00003 or less  
     -MINCONF: selecting the final predicted triples  
   
 4. predict triples(in `KGE-TSP`)
