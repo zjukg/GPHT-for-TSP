@@ -26,8 +26,6 @@ python RuleTensor-TSP/GraphRule_open.py -dataset=DATASET  -rule_len=LEN -hc_thr=
 `GPU`: -1 for cpu, otherwise the gpu id
 ```
 
-
-
 ###### KGE-TSP
 ```bash
 #CFamily
@@ -43,8 +41,6 @@ python RuleTensor-TSP/GraphRule_open.py -dataset=DATASET  -rule_len=LEN -hc_thr=
 
 `STEP`: do valid every `STEP` steps
 ```
-
-
 
 ###### GPHT
 
