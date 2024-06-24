@@ -1,0 +1,6 @@
+python==3.8.13
+torch==1.8.0
+torch_scatter==2.0.8
+torch_space==0.6.12
+ordered_set==4.1.0
+numpy==1.23.0
